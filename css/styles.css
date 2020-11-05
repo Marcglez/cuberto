@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    padding: 20px;
+    text-align: left;
+}
+
+.header h1 {
+    font-size: 6vw;
+    color: #00a793;
+}
+
+.header h2 {
+    font-size: 2vw;
+}
+
+
+/* Clases de Columns*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 7% 7% 0% 7%;
+}
+
+.one-column h1 {
+    font-size: 5vw;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 7%;
+}
+
+.two-column h1 {
+    font-size: 4.5vw;
+    color: grey;
+}
+
+.two-column h2 {
+    font-size: 3vw;
+}
+
+.two-column h3 {
+    font-size: 2vw;
+}
+
+.two-column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.two-column p {
+    font-size: 2vw;
+}
+
+.three-column {
+    float: left;
+    width: 33.3%;
+    padding: 7%;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 7%;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+
+/*clase de padding*/
+
+.padding-0 {
+    padding: 0%;
+}
+
+#section-1 {
+    background-color: #f5eef5;
+}
+
+#section-2 {
+    background-color: #FAF5F3;
+}
+
+#section-3 {
+    background-color: #f2f9f8;
+}
+
+#section-4 {
+    color: white;
+    background-color: #000000;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:700px) {
+    .two-column,
+    .three-column {
+        width: 100%;
+    }
+    .header {
+        background-image: url('');
+    }
+    .four-column {
+        width: 50%;
+    }
+}
